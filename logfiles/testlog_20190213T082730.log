@@ -1,0 +1,18 @@
+03:02:2019_135730 - info: Starting Test script excution for class: AddNotes
+03:02:2019_135730 - info: Inside method: LoginPage.login
+03:02:2019_135730 - info: Inside method: LoginPage.openApplication
+03:02:2019_135730 - debug: Inside method: CommonUtil.navigateToApplication
+03:02:2019_135733 - info: Inside method: LoginPage.setUserName
+03:02:2019_135733 - debug: Inside method: CommonUtil.setElementValue
+03:02:2019_135734 - info: Inside method: LoginPage.clickNextButton
+03:02:2019_135734 - debug: Inside method: CommonUtil.clickWebElement
+03:02:2019_135735 - info: Inside method: LoginPage.setPassword
+03:02:2019_135735 - debug: Inside method: CommonUtil.setElementValue
+03:02:2019_135735 - info: Inside method: LoginPage.clickSignInButton
+03:02:2019_135735 - debug: Inside method: CommonUtil.clickWebElement
+03:02:2019_135747 - error: Error in test case: AssertionError: expected 'Pune' to be empty
+03:02:2019_135747 - info: Completed Test script excution for method: TC_002_ CreateNotes
+03:02:2019_135747 - info: ------------------------------------------------ 
+03:02:2019_135747 - info: Completed Test script excution for class: AddNotes
+03:02:2019_135747 - info: ------------------------------------------------ 
+03:02:2019_135747 - info: ------------------------------------------------ 

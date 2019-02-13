@@ -1,0 +1,19 @@
+03:02:2019_143151 - info: Starting Test script excution for class: AddNotes
+03:02:2019_143151 - info: Inside method: LoginPage.login
+03:02:2019_143151 - info: Inside method: LoginPage.openApplication
+03:02:2019_143151 - debug: Inside method: CommonUtil.navigateToApplication
+03:02:2019_143154 - info: Inside method: LoginPage.setUserName
+03:02:2019_143154 - debug: Inside method: CommonUtil.setElementValue
+03:02:2019_143154 - info: Inside method: LoginPage.clickNextButton
+03:02:2019_143154 - debug: Inside method: CommonUtil.clickWebElement
+03:02:2019_143155 - info: Inside method: LoginPage.setPassword
+03:02:2019_143155 - debug: Inside method: CommonUtil.setElementValue
+03:02:2019_143156 - info: Inside method: LoginPage.clickSignInButton
+03:02:2019_143156 - debug: Inside method: CommonUtil.clickWebElement
+03:02:2019_143215 - info: Inside method: HomePage.selectTabName
+03:02:2019_143215 - debug: Inside method: CommonUtil.clickWebElement
+03:02:2019_143215 - info: Completed Test script excution for method: TC_002_ CreateNotes
+03:02:2019_143215 - info: ------------------------------------------------ 
+03:02:2019_143215 - info: Completed Test script excution for class: AddNotes
+03:02:2019_143215 - info: ------------------------------------------------ 
+03:02:2019_143215 - info: ------------------------------------------------ 

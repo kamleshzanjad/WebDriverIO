@@ -1,0 +1,50 @@
+{
+  "name": "WebDriverIO-TypeScript-Allure",
+  "version": "1.0.0",
+  "description": "An example project using WebdriverIO with TypeScript and allure reporter",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc",
+    "pretest": "cls && npm run tsc && cls",
+    "test": "node ./node_modules/typescript/lib/tsc.js && node ./node_modules/webdriverio/bin/wdio && node ./node_modules/rimraf/bin.js src",
+    "start": "./node_modules/webdriverio/bin/wdio wdio.conf.js --spec",
+    "build": "node ./node_modules/typescript/lib/tsc.js",
+    "posttest": "F://GitNew//Repositories//WebDriverIO-TypeScript-Allure//node_modules//allure-commandline//dist//bin//allure serve .//allure-results  && F://GitNew//Repositories//WebDriverIO-TypeScript-Allure//node_modules//allure-commandline//dist//bin//allure generate .//allure-results --clean -O .//allure-results//allure-report1 || true",
+    "postreport": "node_modules//allure-commandline//dist//bin//allure serve .//allure-results  && node_modules//allure-commandline//dist//bin//allure generate allure-results --clean -O allure-report || true"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anoopsivarajan/WebDriverIO-TypeScript-Allure.git"
+  },
+  "keywords": [
+    "Selenium",
+    "Mocha",
+    "WebdriverIO",
+    "Allure"
+  ],
+  "author": "Anoop Sivarajan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/anoopsivarajan/WebDriverIO-TypeScript-Allure/issues"
+  },
+  "homepage": "https://github.com/anoopsivarajan/WebDriverIO-TypeScript-Allure#readme",
+  "devDependencies": {
+    "@types/chai": "^4.1.4",
+    "@types/mocha": "^5.2.4",
+    "@types/webdriverio": "^4.10.3",
+    "allure-commandline": "^2.5.0",
+    "chai": "^4.1.2",
+    "rimraf": "^2.5.4",
+    "typescript": "^2.0.6",
+    "wdio-allure-reporter": "^0.6.2",
+    "wdio-mocha-framework": "^0.6.1",
+    "wdio-selenium-standalone-service": "^0.0.10",
+    "webdriverio": "^4.13.1",
+    "winston": "~2.4.1"
+  },
+  "dependencies": {
+    "crypto": "^1.0.1",
+    "wdio-allure-addons-reporter": "0.0.4",
+    "properties-reader": "0.0.16"
+  }
+}
