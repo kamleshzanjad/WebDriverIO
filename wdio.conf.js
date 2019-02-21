@@ -1,14 +1,16 @@
 let varTimeOut=600000;
 exports.config = {
 
+  specs: ["./src/specs/AddNotes.js"],
+
   beforeSuite: function (suite) {
-    browser.setTimeout({ 'pageLoad': varTimeOut });
-    browser.setTimeout({ 'implicit': varTimeOut });
-    browser.setTimeout({ 'script': varTimeOut });
-    browser.executeAsync((done) => {
-      //console.log('this should not fail');
-      setTimeout(done, varTimeOut);
-    });
+    // browser.setTimeout({ 'pageLoad': varTimeOut });
+    // browser.setTimeout({ 'implicit': varTimeOut });
+    // browser.setTimeout({ 'script': varTimeOut });
+    // browser.executeAsync((done) => {
+    //   //console.log('this should not fail');
+    //   setTimeout(done, varTimeOut);
+    // });
   },
   // Function to be executed after a test (in Mocha/Jasmine) or a step (in Cucumber) starts.
   afterTest: function (test) {
@@ -34,7 +36,7 @@ exports.config = {
   // NPM script (see https://docs.npmjs.com/cli/run-script) then the current working
   // directory is where your package.json resides, so `wdio` will be called from there.
   //
-  specs: ["./src/specs/*.js"],
+ 
   // Patterns to exclude.
   exclude: [
     // 'path/to/excluded/files'

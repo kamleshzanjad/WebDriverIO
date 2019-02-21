@@ -13,11 +13,11 @@ export default class HomePage extends CommonUtil {
     return objProperties.get(key);
   }
 
-  public selectTabName(tabName:string): void {
-    logger.info("Inside method: HomePage.selectTabName" );
+  public navTabName(tabName:string): void {
+    logger.info("Inside method: HomePage.navTabName" );
     let locator= this.getMapValue("TabName");
-    locator=locator.replace("VALUES", "Projects");
-    this.clickWebElement(locator);
+    locator=locator.replace("VALUES", tabName);
+    this.clickElement(locator);
   }  
 
   

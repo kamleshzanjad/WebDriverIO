@@ -21,7 +21,7 @@ export default class ProjectPage extends CommonUtil {
     locator=locator.replace("VALUES", projectName);
     }else
     locator=this.getMapValue("AnyProject");
-    this.clickWebElement(locator);
+    this.clickElement(locator);
   }  
 
   

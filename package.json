@@ -9,10 +9,8 @@
     "test": "node ./node_modules/typescript/lib/tsc.js && node ./node_modules/webdriverio/bin/wdio && node ./node_modules/rimraf/bin.js src",
     "start": "./node_modules/webdriverio/bin/wdio wdio.conf.js --spec",
     "build": "node ./node_modules/typescript/lib/tsc.js",
-    "posttest": "F://GitNew//Repositories//WebDriverIO-TypeScript-Allure//node_modules//allure-commandline//dist//bin//allure serve .//allure-results  && F://GitNew//Repositories//WebDriverIO-TypeScript-Allure//node_modules//allure-commandline//dist//bin//allure generate .//allure-results --clean -O .//allure-results//allure-report1 || true",
-    "postreport": "node_modules//allure-commandline//dist//bin//allure serve .//allure-results  && node_modules//allure-commandline//dist//bin//allure generate allure-results --clean -O allure-report || true"
+    "posttest": "F://GIT//Repositories//WebDriverIO//node_modules//allure-commandline//dist//bin//allure serve .//allure-results  && F://GIT//Repositories//WebDriverIO//node_modules//allure-commandline//dist//bin//allure generate .//allure-results --clean -O .//allure-results//allure-report1 || true"
   },
-
   "keywords": [
     "Selenium",
     "Mocha",
@@ -20,9 +18,8 @@
     "Allure",
     "tsc"
   ],
-  "author": "Anoop Sivarajan",
+  "author": "Author",
   "license": "MIT",
-  
   "devDependencies": {
     "@types/chai": "^4.1.4",
     "@types/mocha": "^5.2.4",

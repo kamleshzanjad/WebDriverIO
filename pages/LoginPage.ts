@@ -23,7 +23,7 @@ export default class LoginPage extends CommonUtil {
   public setUserName(value: string): void {
     logger.info("Inside method: LoginPage.setUserName" );
     if(value!=null){
-    this.setElementValue(this.getMapValue("UserName"), value);
+    this.setElementText(this.getMapValue("UserName"), value);
     }
     else
     this.setElementValue(this.getMapValue("UserName"), appData.userId1);
@@ -31,7 +31,7 @@ export default class LoginPage extends CommonUtil {
 
   public clickNextButton() {
     logger.info("Inside method: LoginPage.clickNextButton" );
-    this.clickWebElement(this.getMapValue("NextButton"));
+    this.clickElement(this.getMapValue("NextButton"));
   }
 
   public setPassword(value: string): void {
@@ -45,7 +45,7 @@ export default class LoginPage extends CommonUtil {
 
   public clickSignInButton() {
     logger.info("Inside method: LoginPage.clickSignInButton" );
-    this.clickWebElement(this.getMapValue("SignInButton"));
+    this.clickElement(this.getMapValue("SignInButton"));
   }
   public login(userId, password){
     logger.info("Inside method: LoginPage.login" );

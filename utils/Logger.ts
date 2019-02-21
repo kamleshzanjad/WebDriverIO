@@ -24,7 +24,8 @@ export class Logger{
 		   }),
 		   new (winston.transports.File)({
 			   timestamp: timestamp
-				, filename: './logfiles/testlog_' + Logger.currentTimeStamp +'.log'			   
+			   , filename: './logfiles/testlog_.log'		
+				//, filename: './logfiles/testlog_' + Logger.currentTimeStamp +'.log'			   
 			   /* , colorise: true  */
 			   , json: false 
 			   , prettyPrint: true
